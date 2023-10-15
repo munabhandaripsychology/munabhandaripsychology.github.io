@@ -210,7 +210,7 @@ a:focus {
     .navbar {
         position: absolute;
         width: 100%;
-        top: 60px;
+        /* top: 60px; */
         padding: 20px 60px;
         background: rgba(0, 0, 0, .1) !important;
         z-index: 9;
@@ -238,6 +238,10 @@ a:focus {
     .navbar a.nav-link {
         padding: 5px;
     }
+
+    .navbar-brand {
+	    display: none;
+    }
     
     .navbar .dropdown-menu {
         box-shadow: none;
@@ -252,8 +256,9 @@ a:focus {
     position: relative;
     width: 100%;
     margin-bottom: 45px;
-    height: calc(100vh - 60px);
-    background: #D5B981;
+    height: calc(100vh);
+    /* background: #D5B981; */
+    background-image: url(../img/pebbles.jpg);
     overflow: hidden;
 }
 
@@ -556,6 +561,10 @@ a:focus {
 }
 
 
+html {
+  scroll-behavior: smooth;
+}
+
 /*******************************/
 /********** About CSS **********/
 /*******************************/
@@ -563,7 +572,10 @@ a:focus {
     position: relative;
     width: 100%;
     padding: 45px 0;
+    scroll-behavior: smooth;    /* <----- THE SECRET ---- */
 }
+
+#about 
 
 .about .section-header {
     margin-bottom: 30px;
