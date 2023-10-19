@@ -218,7 +218,7 @@ a:focus {
     
     .navbar.nav-sticky {
         padding: 10px 60px;
-        background: #1d2434 !important;
+        background: #bfa674 !important;
     }
     
     .navbar a.nav-link {
@@ -232,7 +232,7 @@ a:focus {
 @media (max-width: 991.98px) {   
     .navbar {
         padding: 15px;
-        background: #1d2434 !important;
+        background: #bfa674 !important;
     }
     
     .navbar a.nav-link {
@@ -255,10 +255,10 @@ a:focus {
 .hero {
     position: relative;
     width: 100%;
-    margin-bottom: 45px;
-    height: calc(100vh);
+    /* margin-bottom: 45px; */
+    /* height: calc(100vh); */
     /* background: #D5B981; */
-    background-image: url(../img/pebbles.jpg);
+    /* background-image: url(../img/pebbles.jpg); */
     overflow: hidden;
 }
 
@@ -281,7 +281,7 @@ a:focus {
     padding-left: 75px;
     height: calc(100vh - 60px);
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     flex-direction: column;
 }
@@ -290,7 +290,6 @@ a:focus {
     color: #1d2434;
     font-size: 50px;
     font-weight: 700;
-    margin-bottom: 20px;
 }
 
 .hero .hero-text p {
@@ -1422,3 +1421,37 @@ html {
         text-align: center;
     }
 }
+
+/* :root{ */
+/*     --overlay-color-1: #ff0000; */
+/*     --overlay-color-2: #0000ff; */
+/*     --anim-duration: 2s; */
+/* } */
+
+/* #home { */
+/*     opacity: 0.8; */
+/*     background: none; */
+/* } */
+/**/
+/* #home:after, */
+/* #home:before { */
+/*     content: ''; */
+/*     display: block; */
+/*     position: absolute; */
+/*     top: 0; bottom: 0; left: 0; right: 0; */
+/* } */
+/**/
+/* #home:before { */
+/*     background: linear-gradient(135deg, var(--overlay-color-2) 0%, var(--overlay-color-1) 100%); */
+/*     animation: OpacityAnim var(--anim-duration) ease-in-out 0s infinite alternate; */
+/* } */
+/**/
+/* #home:after { */
+/*     background: linear-gradient(135deg, var(--overlay-color-1) 0%, var(--overlay-color-2) 100%); */
+/*     animation: OpacityAnim var(--anim-duration) ease-in-out calc(-1 * var(--anim-duration)) infinite alternate; */
+/* } */
+/**/
+/* @keyframes OpacityAnim { */
+/*     0%{opacity: 1.0} */
+/*     100%{opacity: 0.0} */
+/* } */
