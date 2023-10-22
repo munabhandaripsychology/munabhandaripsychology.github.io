@@ -26,7 +26,6 @@ a:active,
 a:focus {
     color: #D5B981;
     outline: none;
-    text-decoration: none;
 }
 
 .btn:focus,
@@ -199,6 +198,11 @@ a:focus {
     transition: none;
 }
 
+.nav-link.active {
+   text-decoration: underline;
+    text-underline-offset: 8px; 
+}
+
 .navbar .dropdown-menu {
     margin-top: 0;
     border: 0;
@@ -218,7 +222,8 @@ a:focus {
     
     .navbar.nav-sticky {
         padding: 10px 60px;
-        background: #1d2434 !important;
+	backdrop-filter: blur(10px);
+        /* background: #1d2434 !important; */
     }
     
     .navbar a.nav-link {
@@ -255,11 +260,14 @@ a:focus {
 .hero {
     position: relative;
     width: 100%;
-    margin-bottom: 45px;
-    height: calc(100vh);
+    /* margin-bottom: 45px; */
+    /* height: calc(100vh); */
     /* background: #D5B981; */
-    background-image: url(../img/pebbles.jpg);
+    background-image: url(../img/back.jpg);
     overflow: hidden;
+    background-size: cover;
+  /* width: 300px; /* Set the desired width and height for the container */ */
+  /* height: 200px; */
 }
 
 .hero .container-fluid {
@@ -281,7 +289,7 @@ a:focus {
     padding-left: 75px;
     height: calc(100vh - 60px);
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     flex-direction: column;
 }
@@ -534,6 +542,7 @@ a:focus {
 /******* Section Header ********/
 /*******************************/
 .section-header {
+    color: #faba86;
     position: relative;
     max-width: 600px;
     margin: 0 auto;
@@ -570,6 +579,8 @@ html {
 /*******************************/
 .about {
     position: relative;
+    /* background-image: url(../img/back.jpg); */
+    background-size: cover;
     width: 100%;
     padding: 45px 0;
     scroll-behavior: smooth;    /* <----- THE SECRET ---- */
@@ -597,6 +608,7 @@ html {
 }
 
 .about .about-img::before {
+display:none;	 
     position: absolute;
     content: "";
     top: -60px;
@@ -608,6 +620,7 @@ html {
 }
 
 .about .about-img::after {
+	display: none:
     position: absolute;
     content: "";
     top: -30px;
