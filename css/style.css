@@ -263,11 +263,18 @@ a:focus {
     /* margin-bottom: 45px; */
     /* height: calc(100vh); */
     /* background: #D5B981; */
-    background-image: url(../img/back.jpg);
     overflow: hidden;
-    background-size: cover;
-  /* width: 300px; /* Set the desired width and height for the container */ */
+    /* background-size: cover; */
+  /* width: 300px; /* Set the desired width and height for the container */
   /* height: 200px; */
+}
+
+.parallax {
+    background-image: url(../img/back.jpg);
+ background-attachment: fixed;
+ background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero .container-fluid {
@@ -620,7 +627,7 @@ display:none;
 }
 
 .about .about-img::after {
-	display: none:
+	display: none;
     position: absolute;
     content: "";
     top: -30px;
@@ -651,8 +658,13 @@ display:none;
 }
 
 .about .about-text a.btn:hover {
-    color: #D5B981;
-    background: #1d2434;
+    color: white;
+    background: #f6c6a6;
+}
+
+.shadow-text{
+text-shadow: 1px 1px 2px black;
+color: white !important;
 }
 
 @media (max-width: 767.98px) {
